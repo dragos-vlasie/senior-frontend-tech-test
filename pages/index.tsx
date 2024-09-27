@@ -20,7 +20,7 @@ export default function Home() {
             <p className="mb-4">
               We are delighted to invite you to join Ffern Friends, our new community of like minded creators and artists.
             </p>
-            <p className="mb-4">Here's how it works:</p>
+            <p className="mb-4">Here&apos;s how it works:</p>
             <ul className="list-disc mb-4 ml-8">
               <li>
                 You&apos;ll skip the waiting list and be added straight to the Ffern ledger As a ledger member, you&apos;ll receive a
