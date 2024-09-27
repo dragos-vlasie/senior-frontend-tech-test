@@ -57,7 +57,7 @@ const Form = () => {
       onSuccess: () => {
         setSubmitted(true);
       },
-      onError: (error: any) => {
+      onError: (error: UpdateFfernFriendsErrorResponse) => {
         console.error("Error submitting the form:", error);
       },
     });

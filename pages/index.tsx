@@ -23,17 +23,17 @@ export default function Home() {
             <p className="mb-4">Here's how it works:</p>
             <ul className="list-disc mb-4 ml-8">
               <li>
-                You’ll skip the waiting list and be added straight to the Ffern ledger As a ledger member, you’ll receive a
+                You&apos;ll skip the waiting list and be added straight to the Ffern ledger As a ledger member, you&apos;ll receive a
                 made-to-order bottle of natural eau de parfum each season
               </li>
-              <li>You’ll also be given a unique link to our waiting list, if you decide to share Ffern within your community</li>
+              <li>You&apos;ll also be given a unique link to our waiting list, if you decide to share Ffern within your community</li>
               <li>Your bottle will arrive one week ahead of its launch, just before the solstices and equinoxes</li>
-              <li>You’ll also be given a unique link to our waiting list, if you decide to share Ffern within your community</li>
+              <li>You&apos;ll also be given a unique link to our waiting list, if you decide to share Ffern within your community</li>
             </ul>
 
             <p className="mb-4">
-              If this sounds like something you may be interested in, we’d love it if you could fill out your details below, and
-              we’ll send you our latest fragrance.
+              If this sounds like something you may be interested in, we&apos;d love it if you could fill out your details below, and
+              we&apos;ll send you our latest fragrance.
             </p>
             <p className="mb-1">Sincerely,</p>
             <p className="mb-4">Salma & the Ffern team</p>

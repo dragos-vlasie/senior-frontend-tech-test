@@ -25,6 +25,7 @@ export default async function handler(
       const data: GetFfernFriendResponse = await response.json();
       return res.status(200).json(data);
     } catch (error) {
+      console.log("🚀🚀🚀🚀🚀🚀 ~ error:", error)
       return res.status(500).json({ error: 'Internal Server Error' });
     }
   } else if (req.method === "POST") {
@@ -48,6 +49,7 @@ export default async function handler(
       const updatedData = await response.json();
       return res.status(200).json(updatedData);
     } catch (error) {
+      console.log("🚀🚀🚀🚀🚀🚀 ~ error:", error)
       return res.status(500).json({ error: 'Internal Server Error' });
     }
   } else {

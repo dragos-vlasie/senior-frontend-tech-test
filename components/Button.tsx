@@ -1,4 +1,3 @@
-// components/Button.tsx
 import React from "react";
 
 interface ButtonProps {
@@ -9,7 +8,7 @@ interface ButtonProps {
   variant?: "default" | "orange" | "brown";
 }
 
-const Button: React.FC<ButtonProps> = ({ text, onClick, disabled = false, locked = false, variant = "default" }) => {
+const Button: React.FC<ButtonProps> = ({ text, onClick, disabled = false, locked = false }) => {
   return (
     <button
       type="submit"
