@@ -13,7 +13,6 @@ export default function Home() {
   };
   return (
     <Layout>
-      {/* Introduction Section */}
       <div className="text-gray-700 prose gap-16 md:p-8 md:flex md:flex-row-reverse items-center">
         <Video videoFile={videoFile} autoplayMuted loop />
         <div>
@@ -41,7 +40,6 @@ export default function Home() {
           </div>
       </div>
 
-      {/* Form Section */}
       <Form />
       <Image className="mt-20 md:ml-6 mb-2 block" src="/ffern-logo-black.svg" alt="" width={60} height={18} />
     </Layout>

@@ -18,7 +18,7 @@ export type GetFfernFriendResponse = {
     firstName: string;
     lastName: string;
     addressLineOne: string;
-    addressLineTwo?: string; // Optional field
+    addressLineTwo?: string;
     city: string;
     postcode: string;
     stateOrCounty: string;
@@ -27,7 +27,7 @@ export type GetFfernFriendResponse = {
 
   
   export type UpdateFfernFriendsErrorResponse = {
-    error: string; // A short error code or identifier
-    message: string; // A detailed error message
+    error: string; 
+    message: string; 
   };
   

@@ -1,5 +1,3 @@
-// utils/api.ts
-
 import { GetFfernFriendResponse, UpdateFfernFriendsRequest } from '@/types/types';
 
 export const fetchFfernFriend = async (friendId: string): Promise<GetFfernFriendResponse> => {
