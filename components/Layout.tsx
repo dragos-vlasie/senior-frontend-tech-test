@@ -1,8 +1,6 @@
-// components/Layout.tsx
 import { ReactNode } from 'react';
 import Footer from './Footer';
 import Header from './Header';
-import Image from 'next/image';
 
 interface LayoutProps {
   children: ReactNode;
