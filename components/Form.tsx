@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { z } from "zod";
 import { useMutation, UseMutationResult } from "@tanstack/react-query";
 import FloatingLabelInput from "./FloatingLabel";
@@ -6,6 +6,7 @@ import Button from "./Button";
 import { joinClassNames } from "@/utils/joinClassNames";
 import { updateFfernFriend } from "@/utils/api";
 import { GetFfernFriendResponse, UpdateFfernFriendsErrorResponse, UpdateFfernFriendsRequest } from "@/types/types";
+import { useRouter } from "next/router";
 
 const schema = z.object({
   firstName: z
@@ -37,6 +38,8 @@ const schema = z.object({
 });
 
 const Form = () => {
+  const router = useRouter();
+
   const [formData, setFormData] = useState<UpdateFfernFriendsRequest>({
     firstName: "",
     lastName: "",
@@ -70,6 +73,16 @@ const Form = () => {
       setErrors((prevErrors) => ({ ...prevErrors, [key]: undefined })); // Clear the error for the specific field
     }
   };
+
+    useEffect(() => {
+      const { firstName, lastName } = router.query;
+  
+      setFormData((prev) => ({
+        ...prev,
+        firstName: typeof firstName === "string" ? firstName : prev.firstName,
+        lastName: typeof lastName === "string" ? lastName : prev.lastName,
+      }));
+    }, [router.query]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
